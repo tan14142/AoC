@@ -8,6 +8,7 @@ import (
 	d3 "AoC/2022-03"
 	d4 "AoC/2022-04"
 	d5 "AoC/2022-05"
+	d6 "AoC/2022-06"
 )
 
 func main() {
@@ -21,4 +22,6 @@ func main() {
 	fmt.Println(d4.CalcOverlaps("./2022-04/input.txt"))
 	fmt.Println(d5.CalcTopCrates("./2022-05/input.txt"))
 	fmt.Println(d5.CalcTopCrates2("./2022-05/input.txt"))
+	fmt.Println(d6.CalcStartOfPacket("./2022-06/input.txt"))
+	fmt.Println(d6.CalcStartOfMessage("./2022-06/input.txt"))
 }
