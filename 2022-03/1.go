@@ -5,20 +5,10 @@ import (
 	"os"
 )
 
-var priorities = map[byte]int{}
-
-func SetPriorities() {
-	for i := 0; i < 26; i++ {
-		priorities[byte('a'+i)] = i + 1
-	}
-	for i := 0; i < 26; i++ {
-		priorities[byte('A'+i)] = i + 27
-	}
-}
-
 func CalcSumOfPriorities(filename string) int {
 	file, _ := os.Open(filename)
 	scanner := bufio.NewScanner(file)
+	priorities := getPriorities()
 	result := 0
 
 	for scanner.Scan() {

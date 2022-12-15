@@ -9,6 +9,7 @@ func CalcSumOfPrioritiesByGroup(filename string) int {
 	file, _ := os.Open(filename)
 	scanner := bufio.NewScanner(file)
 	count := 0
+	priorities := getPriorities()
 	result := 0
 	set1 := map[byte]bool{}
 	set2 := map[byte]bool{}
