@@ -1,4 +1,4 @@
-package main
+package d1
 
 import (
 	"bufio"
@@ -6,7 +6,7 @@ import (
 	"strconv"
 )
 
-func calcTop3Calories(filename string) int {
+func CalcTop3Calories(filename string) int {
 	file, _ := os.Open(filename)
 	scanner := bufio.NewScanner(file)
 
