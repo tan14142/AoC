@@ -9,6 +9,7 @@ import (
 	d4 "AoC/2022-04"
 	d5 "AoC/2022-05"
 	d6 "AoC/2022-06"
+	d7 "AoC/2022-07"
 )
 
 func main() {
@@ -24,4 +25,6 @@ func main() {
 	fmt.Println(d5.CalcTopCrates2("./2022-05/input.txt"))
 	fmt.Println(d6.CalcStartOfPacket("./2022-06/input.txt"))
 	fmt.Println(d6.CalcStartOfMessage("./2022-06/input.txt"))
+	fmt.Println(d7.CalcTotalSizes("./2022-07/input.txt"))
+	fmt.Println(d7.CalcNearestMinSize("./2022-07/input.txt"))
 }
